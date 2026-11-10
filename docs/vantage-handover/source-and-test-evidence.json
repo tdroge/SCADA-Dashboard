@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-11-10T19:29:05.574787+00:00",
+  "scada": {
+    "version": "1.3.1",
+    "revision": "c8d6221318f7fd7917ec76cf92fe3c91638f668d",
+    "runtime_files_compared": 26,
+    "reference_worktree_clean": true,
+    "normalized_content_differences": [],
+    "line_ending_only_files": [
+      "server.py",
+      "account_store.py",
+      "updater.py",
+      "update_installer.py",
+      "start_dashboard.py",
+      "Start Dashboard.cmd",
+      "Create Desktop Shortcut.cmd",
+      "config.default.json",
+      "version.json",
+      "public/account.js",
+      "public/app.js",
+      "public/appearance.js",
+      "public/index.html",
+      "public/notes.js",
+      "public/style.css",
+      "public/support.js",
+      "public/taskbar.js",
+      "public/tv.js",
+      "public/updates.js"
+    ],
+    "release_zip_files_compared": 27,
+    "release_zip_byte_differences": []
+  },
+  "viewer": {
+    "version": "1.2.1",
+    "revision": "0193ab7abb80b3c90e5c42e9425c250bfe0b40c0",
+    "worktree_clean": true
+  },
+  "tests": {
+    "scada": {
+      "command": "py -B -m unittest test_notes test_taskbar test_updates test_server test_reopen test_support test_progress test_accounts_completion test_partial_progress -q",
+      "tests": 134,
+      "result": "PASS",
+      "runner_reported_seconds": 5.08,
+      "jira_mode": "simulated"
+    },
+    "viewer": {
+      "command": "py -B -m unittest test_server -v",
+      "tests": 14,
+      "result": "PASS",
+      "runner_reported_seconds": 0.153,
+      "jira_mode": "simulated"
+    }
+  },
+  "code_hashes": {
+    "scada/server.py": "473fa40963a5ab0694f18d864def5aa88840f4476b6469031b5e73d124d6e36f",
+    "scada/account_store.py": "4305d66b50721de15cf06b7da724fdae3cab66330c2076d07c9b3f70d36b8e58",
+    "scada/updater.py": "f234f7bf2c722e7e551b9b72597e94d616de8871140ff3f97f2c6dd52fced9c2",
+    "scada/update_installer.py": "ad9bf6ff60eb4cd57f50296198698190e4bd285de6902d272f91301705ce366b",
+    "scada/start_dashboard.py": "9f86137f7e2dc8589b3661bb03fafb088b72b767752d1db65204406aac1bdbf3",
+    "scada/Start Dashboard.cmd": "3705223cc44499a3f7fedf8783ffb8db58e11cf172f88f4ca15bb3ee63ba877a",
+    "scada/Create Desktop Shortcut.cmd": "411fe11bf30d7a242850c8bd76dfaef0baa1133d42cf61767a9453c4bffe73b8",
+    "scada/config.default.json": "c63e2d9056ff6fb7c161e5a54caf882cebdb18532e7af25e71271d7b243893b2",
+    "scada/version.json": "3af2f501629dea6edaa9532faacacb12991045dbbe9577fd97a8302d179e4f08",
+    "scada/public/account.js": "e2f62f73a7e4d35f18486019e31c6666397d19b047dce444fc54a30eb9277215",
+    "scada/public/app.js": "00eb090a886f1631c04a106af2813b308acb57e268efdde16ead3205a59232b5",
+    "scada/public/appearance.js": "c1444f86950739a5edaada9d5e4dbea3a94acc95f0e4f949a81703a95fb31c3f",
+    "scada/public/index.html": "47bb72e495e5f3cd59f5ceebff2dd2f98cb4526cd7cd61cee3d38961c8ad6163",
+    "scada/public/mission-ctrl.ico": "f2d24ac4a68d94858bc166e2e79312b1a4f1ab333491265807460faa71f46a10",
+    "scada/public/mission-ctrl.png": "fe741679adb3f91221dba8e21d2584b91096dbea48dcd5da1424cc47e4ab4dcd",
+    "scada/public/notes.css": "75883953c462128adb3d5e4120aa96605a5401daa83cb3869d7ebce372e9e6f3",
+    "scada/public/notes.js": "064410c96174abeef6c8af1f8e56230cc08d33caa8b2d21dd4f5a99b298d1ba8",
+    "scada/public/style.css": "0612d104f196ef0480866f782401b4f51d8fba9a036600d957c60a82518b3121",
+    "scada/public/support.js": "a2ec3794dd872dabccc65cf8f8dfc454c660c780c06cbfce5bc8f691a472b4fc",
+    "scada/public/taskbar.js": "201ef9cf65e080b16a8fe053058708eb6202a439bdbd1f8a88c0f6ace7a6e340",
+    "scada/public/tv.js": "0a32fa17f4bf423f5a2b8c3c677c06f7db6e4883c8c72a079b74633edd15b868",
+    "scada/public/updates.js": "96e531b6ef5243403e6363786412c4689c7a46c0a95b06748b4c1229da5b927b",
+    "scada/public/media/dramatic-crying.gif": "dc644fb76fce3c436b2e29eaa3c1061bfdc7d58c79d538f8a3f70e83b108fe29",
+    "scada/public/media/Goal-sound-effect.mp3": "67305986031100693d13336a4f2688526d8f95735846c33990c16055a7618dd1",
+    "scada/public/media/wedding-crasher-hro.gif": "ac45ed95ce724ce982377d0356b9b5df1912ecc70f9fdbfd40b1f14a9498d9a3",
+    "scada/public/media/womp-womp.mp3": "5e6860965542ea46393511463833f3ea04be2b47b88fb4a60ad5d68943e7974c"
+  }
+}

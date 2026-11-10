@@ -1,0 +1,50 @@
+{
+  "classification": "SIMULATION ONLY",
+  "results": [
+    {
+      "project": "TGW-A",
+      "department": "SCADA",
+      "template": "SCADA-DEMO-V1",
+      "state": "mapped",
+      "numerator": 1,
+      "denominator": 3,
+      "optional": 1,
+      "excluded": 2,
+      "blocked": 1,
+      "percent": 33.333333
+    },
+    {
+      "project": "TGW-FUTURE-B",
+      "department": "SCADA",
+      "template": "SCADA-DEMO-V1",
+      "state": "mapped",
+      "numerator": 2,
+      "denominator": 3,
+      "optional": 0,
+      "excluded": 0,
+      "blocked": 0,
+      "percent": 66.666667
+    },
+    {
+      "project": "TGW-FUTURE-B",
+      "department": "NETWORK",
+      "template": "NETWORK-DEMO-V2",
+      "state": "mapped",
+      "numerator": 2,
+      "denominator": 3,
+      "optional": 1,
+      "excluded": 0,
+      "blocked": 1,
+      "percent": 66.666667
+    }
+  ],
+  "checks": {
+    "future_project_reused_unchanged_rules": true,
+    "second_department_different_template": true,
+    "shared_jira_project_kept_tgw_projects_separate": true,
+    "unapproved_project_excluded": true,
+    "missing_ambiguous_unknown_version_and_disposition_review": true,
+    "unknown_root_and_project_identity_review": true,
+    "zero_denominator_is_not_zero_percent": true
+  }
+}

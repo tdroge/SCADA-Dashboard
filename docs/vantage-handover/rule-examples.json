@@ -1,0 +1,51 @@
+{
+  "classification": "SIMULATED DESIGN CONTRACT. These rule names, labels, fields, project IDs, and phases are invented examples. This is not deployed configuration.",
+  "rules": [
+    {
+      "id": "SCADA-DEMO-V1",
+      "department": "SCADA",
+      "version": "1",
+      "marker": "DEMO_SCADA_V1",
+      "phases": ["PHASE-A"],
+      "project_classes": ["CLASS-A"],
+      "item_source": "jira-subtasks",
+      "completion_policy": "required-applicable-count-v1"
+    },
+    {
+      "id": "NETWORK-DEMO-V2",
+      "department": "NETWORK",
+      "version": "2",
+      "marker": "DEMO_NETWORK_V2",
+      "phases": ["PHASE-A"],
+      "project_classes": ["CLASS-A"],
+      "item_source": "jira-subtasks",
+      "completion_policy": "required-applicable-count-v1"
+    }
+  ],
+  "projects": [
+    {"tgw_id": "TGW-A", "jira_project_id": "10001", "approved": true, "project_class": "CLASS-A", "phase": "PHASE-A", "departments": ["SCADA"]},
+    {"tgw_id": "TGW-FUTURE-B", "jira_project_id": "10001", "approved": true, "project_class": "CLASS-A", "phase": "PHASE-A", "departments": ["SCADA", "NETWORK"]},
+    {"tgw_id": "TGW-OUTSIDE", "jira_project_id": "10002", "approved": false, "project_class": "CLASS-A", "phase": "PHASE-A", "departments": ["NETWORK"]}
+  ],
+  "checklists": [
+    {"id": "ROOT-A", "tgw_ref": "TGW-A", "jira_project_id": "10001", "marker": "DEMO_SCADA_V1", "version": "1", "items": [
+      {"required": true, "state": "complete"},
+      {"required": true, "state": "todo"},
+      {"required": true, "state": "blocked"},
+      {"required": false, "state": "complete"},
+      {"required": true, "state": "not_applicable", "disposition_approved": true},
+      {"required": true, "state": "skipped", "disposition_approved": true}
+    ]},
+    {"id": "ROOT-FUTURE-SCADA", "tgw_ref": "TGW-FUTURE-B", "jira_project_id": "10001", "marker": "DEMO_SCADA_V1", "version": "1", "items": [
+      {"required": true, "state": "complete"},
+      {"required": true, "state": "complete"},
+      {"required": true, "state": "todo"}
+    ]},
+    {"id": "ROOT-FUTURE-NET", "tgw_ref": "TGW-FUTURE-B", "jira_project_id": "10001", "marker": "DEMO_NETWORK_V2", "version": "2", "items": [
+      {"required": true, "state": "complete"},
+      {"required": true, "state": "complete"},
+      {"required": true, "state": "blocked"},
+      {"required": false, "state": "todo"}
+    ]}
+  ]
+}

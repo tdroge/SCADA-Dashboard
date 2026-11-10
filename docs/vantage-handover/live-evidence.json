@@ -1,0 +1,223 @@
+{
+  "classification": "LIVE READ-ONLY OBSERVATION; identifiers and titles replaced by aliases",
+  "collection_started_at": "2026-11-10T19:25:25.378690+00:00",
+  "collection_ended_at": "2026-11-10T19:25:58.621576+00:00",
+  "duration_seconds": 33.244,
+  "repeat_reads_identical": true,
+  "cutoff_limitation": "Stable repeated reads are an observation window, not a transactionally frozen or historical Jira snapshot.",
+  "instance": {
+    "deploymentType": "Server",
+    "version": "10.3.26",
+    "baseUrl": "<JIRA_BASE_URL>"
+  },
+  "scope": {
+    "matched_epics_all_projects": 223,
+    "project_alias": "PROJECT-A",
+    "matched_project_count": 14
+  },
+  "project_summary": {
+    "matching_epics": 16,
+    "assigned_epics": 16,
+    "unassigned_epics": 0,
+    "assigned_done_epics": 12,
+    "all_done_epics": 12
+  },
+  "epic_example": {
+    "key": "EPIC-A",
+    "summary": "<PLC-A>",
+    "status": "Done",
+    "done": true,
+    "resolution": "Done",
+    "ms_end": "2026-05-08",
+    "jira_percent": 100.0,
+    "progress_state": "reported",
+    "linked_issue_count": 1,
+    "sources": [
+      {
+        "key": "WORK-A-1",
+        "summary": "<SCADA work issue>",
+        "percent": 100.0
+      }
+    ],
+    "template_reference_present": true,
+    "leaf_completed": 8,
+    "leaf_total": 8,
+    "leaf_percent": 100.0,
+    "leaf_display_percent": 100,
+    "leaf_items": [
+      {
+        "key": "ITEM-A-01",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-07-28T13:44:38.000+0000"
+      },
+      {
+        "key": "ITEM-A-02",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-07-28T13:44:37.000+0000"
+      },
+      {
+        "key": "ITEM-A-03",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:19:50.000+0000"
+      },
+      {
+        "key": "ITEM-A-04",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:22:31.000+0000"
+      },
+      {
+        "key": "ITEM-A-05",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:22:40.000+0000"
+      },
+      {
+        "key": "ITEM-A-06",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:22:48.000+0000"
+      },
+      {
+        "key": "ITEM-A-07",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:22:55.000+0000"
+      },
+      {
+        "key": "ITEM-A-08",
+        "summary": "<checklist item>",
+        "status": "Done",
+        "category": "done",
+        "has_resolution": true,
+        "done": true,
+        "source_updated_at": "2026-08-17T17:23:03.000+0000"
+      }
+    ]
+  },
+  "field_metadata": [
+    {
+      "id": "customfield_15704",
+      "name": "LMS Creation Date",
+      "schema": {
+        "type": "datetime",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+        "customId": 15704
+      }
+    },
+    {
+      "id": "customfield_10100",
+      "name": "Epic Link",
+      "schema": {
+        "type": "any",
+        "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+        "customId": 10100
+      }
+    },
+    {
+      "id": "customfield_14700",
+      "name": "MS Start-Date",
+      "schema": {
+        "type": "date",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+        "customId": 14700
+      }
+    },
+    {
+      "id": "customfield_10101",
+      "name": "Epic Status",
+      "schema": {
+        "type": "option",
+        "custom": "com.pyxis.greenhopper.jira:gh-epic-status",
+        "customId": 10101
+      }
+    },
+    {
+      "id": "customfield_14701",
+      "name": "MS End-Date",
+      "schema": {
+        "type": "date",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+        "customId": 14701
+      }
+    },
+    {
+      "id": "customfield_10218",
+      "name": "Progress Calculation",
+      "schema": {
+        "type": "option",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+        "customId": 10218
+      }
+    },
+    {
+      "id": "customfield_10210",
+      "name": "% of completion",
+      "schema": {
+        "type": "number",
+        "custom": "com.onresolve.jira.groovy.groovyrunner:scripted-field",
+        "customId": 10210
+      }
+    },
+    {
+      "id": "customfield_11400",
+      "name": "Clone Template Epics",
+      "schema": {
+        "type": "array",
+        "items": "issuelinks",
+        "custom": "com.onresolve.jira.groovy.groovyrunner:multiple-issue-picker-cf",
+        "customId": 11400
+      }
+    },
+    {
+      "id": "customfield_11501",
+      "name": "Clone Template Source Issue",
+      "schema": {
+        "type": "string",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield",
+        "customId": 11501
+      }
+    },
+    {
+      "id": "customfield_15303",
+      "name": "LMS Completion Date",
+      "schema": {
+        "type": "datetime",
+        "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+        "customId": 15303
+      }
+    }
+  ],
+  "request_counts": {
+    "serverInfo": 1,
+    "myself": 1,
+    "field": 1,
+    "search": 8,
+    "issue/{key}": 2
+  },
+  "max_request_seconds": 8.63
+}
